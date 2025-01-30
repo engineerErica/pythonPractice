@@ -38,6 +38,12 @@ print()
 for i in range(1, 6):
     print(i) # This will print 1, 2, 3, 4, 5
 
+x = [1,2,3,4,5]
+idx = 0
+for i in x:
+    print(i)
+    print("BRACKET NOTATION" , x[idx])
+    idx += 1
 """
 ********************************
 
