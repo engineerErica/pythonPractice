@@ -21,7 +21,7 @@ A function is defined using the def keyword, followed by the function name and p
 '''
 print("\nDEFINING A FUNCTION EXAMPLES")
 # Example: Basic function
-def greet():
+def greet() -> None:
     print("Hello, world!")
 
 # Calling the function
@@ -38,13 +38,13 @@ You can consider these *positional* arguments, as the order of the arguments mat
 print("\nFUNCTION ARGUMENTS EXAMPLES")
 
 # Example: Function with arguments
-def greet_person(name):
+def greet_person(name) -> None:
     print(f"Hello, {name}!")
 
 # Calling the function with an argument
 greet_person("Alice")
 
-def greet_person_full_name(first_name, last_name):
+def greet_person_full_name(first_name, last_name) -> None:
     print(f"Hello, {first_name} {last_name}!")
 
 # Calling the function with multiple arguments:
@@ -58,14 +58,13 @@ then it'll use the default in execution.
 print("\nDEFAULT ARGUMENTS EXAMPLES")
 
 # Example: Function with default argument
-def greet_person(name="Guest"):
+def greet_person(name="Guest") -> None:
     print(f"Hello, {name}!")
 
 # Calling the function without an argument
 greet_person()
 # Calling the function with an argument
-greet_person("Bob")
-
+greet_person("Bob")    
 
 '''
 RETURN VALUES
@@ -76,7 +75,7 @@ print("\nRETURN VALUES EXAMPLES")
 # Functions can return values using the return statement.
 
 # Example: Function that returns a value
-def add(a, b):
+def add(a, b) -> int:
     return a + b
 
 # Calling the function and storing the result
@@ -91,7 +90,7 @@ Use keyword arguments for better readability and flexibility
 '''
 print("\nKEYWORD ARGUMENTS")
 # Example: A basic function definition
-def describe_person(name, age):
+def describe_person(name, age) -> None:
     print(f"{name} is {age} years old.")
 
 # Example calling the function with keyword arguments

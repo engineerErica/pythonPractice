@@ -49,12 +49,12 @@ def factorial(n):
     if n == 0 or n == 1:
         return 1
     output = 1
-    for num in range(n, 0):
+    for num in range(n, 0, -1):
         output = num * output
     return output
 
 result2 = factorial(5)
-print(result2)
+print(result2 == 120)
 
 """
 NUMBER GUESSING GAME
