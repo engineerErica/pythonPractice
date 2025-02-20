@@ -45,9 +45,8 @@ build_profile(name="Bob", occupation="Software Engineer")
  
 """
 def build_profile(**profile_info) -> None:
-    for items in profile_info.items():
-        label = items[0].capitalize()
-        print(label + ': ', items[1])
+    for key, value in profile_info.items():
+        print(f"{key.capitalize()}: {value}")
     return
 build_profile(name="Alice", age=30, city="New York")
 build_profile(name="Bob", occupation="Software Engineer")
