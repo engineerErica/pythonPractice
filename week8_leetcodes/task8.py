@@ -79,7 +79,7 @@ class Solution(object):
                 my_dict[num] = i
             i += 1
 
-"""
+""" UNFINISHED
 Post Class Task:
 
 PROBLEM: Squares of a Sorted Array
@@ -88,3 +88,27 @@ https://leetcode.com/problems/squares-of-a-sorted-array/description/
 
 Hint: Use the sorted() funciton to sort a list in Python.
 """
+class Solution(object):
+    def sortedSquares(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        results = []
+        right = len(nums) - 1
+        left = 0
+        while left <= right:
+            if nums[left] ** 2 < nums[right] ** 2:
+                results.append(nums[right] ** 2)
+                right -= 1
+            else:
+                results.append(nums[left] ** 2)
+                left += 1
+        return results
+#time complexity for the above solution is linear because we only loop once
+
+        # for i in range(0, len(nums)):
+        #     nums[i] = nums[i] ** 2
+        #     i+=1
+        # return sorted(nums)
+#time complexity of the above solution is o(nlog(n)) becuase its using the sorted

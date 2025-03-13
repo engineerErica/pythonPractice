@@ -5,19 +5,14 @@ For this session we'll build upon what we've done for the last few sessions and 
 Leetcode-style questions on your own. We'll go through the solutions toghether at the end.
 
 """
-
+#UNFINISHED
 """
 PROBLEM 1: Move Zeros
 https://leetcode.com/problems/move-zeroes/description/ 
 """
 
 """
-PROBLEM 2: Valid Parentheses
-https://leetcode.com/problems/valid-parentheses/description/
-"""
-
-"""
-PROBLEM 3: Majority Element
+PROBLEM 2: Majority Element
 https://leetcode.com/problems/majority-element/description/ 
 
 """
@@ -56,6 +51,7 @@ class Solution(object):
         else:
             return False
 
+#UNFINISHED
 """
 PROBLEM 2 (extra practice): Majority Element
 https://leetcode.com/problems/majority-element/description/ 
