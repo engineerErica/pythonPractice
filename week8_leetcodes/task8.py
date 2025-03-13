@@ -97,6 +97,7 @@ class Solution(object):
         results = []
         right = len(nums) - 1
         left = 0
+
         while left <= right:
             if nums[left] ** 2 < nums[right] ** 2:
                 results.append(nums[right] ** 2)
@@ -104,7 +105,9 @@ class Solution(object):
             else:
                 results.append(nums[left] ** 2)
                 left += 1
-        return results
+                
+        return results[::-1]
+
 #time complexity for the above solution is linear because we only loop once
 
         # for i in range(0, len(nums)):
