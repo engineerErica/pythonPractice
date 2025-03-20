@@ -79,5 +79,6 @@ class BankAccount:
     
 my_bank_account = BankAccount(100)
 my_bank_account.deposit(100)
+my_bank_account.withdraw(250)
 my_bank_account.withdraw(50)
 my_bank_account.get_balance()
