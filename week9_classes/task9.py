@@ -67,8 +67,11 @@ class BankAccount:
         print(f"${amount} has been added to your account. The new balance is ${self.balance}.")
     
     def withdraw(self, amount: int):
-        self.balance -= amount
-        print(f"${amount} has been withdrawn from your account. The new balance is ${self.balance}.")
+        if self.balance < amount:
+            print("Insufficient funds")
+        else:
+            self.balance -= amount
+            print(f"${amount} has been withdrawn from your account. The new balance is ${self.balance}.")
     
     def get_balance(self) -> int:
         print(f"Your bank account currently has ${self.balance}")
